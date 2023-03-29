@@ -18,24 +18,25 @@
     <div class="main-container">
 
         <header class="header">
-            
+            <!-- Un logo doit être cliquable et ramener vers la page d'accueil -->
             <picture>
                 <source class="header_logo" media="(min-width: 768.98px)"
                         srcset="./images/logo/Booki@3x.png">
                 <source class="header_logo" srcset="images/logo/Booki.png">
                 <img class="header_logo" src="images/logo/Booki.png" alt="logo_Booki">
             </picture>
-
+            <!-- Tu dois utiliser la balise nav -->
             <div class="header_nav">
-                <a class="active" href="">H&eacute;bergement</a>
+                <!-- Dans ton nav, par convention on utilise une liste non-ordonnée (ul > li) -->
+                <a class="active" href="">Hébergement</a>
                 <a href="">Activités</a>
             </div>
-
         </header>
 
         <main>
+            <!-- Doit être une section et non une div -->
             <div class="info">
-                <h1>Trouvez votre h&eacute;bergement pour des vacances de r&ecirc;ve</h1>
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>
                     En plein centre ville ou en pleine nature
                 </p>
@@ -53,23 +54,24 @@
                     
                     <a href="#">
                         <i class="fa-solid fa-money-bill-wave"></i>
-                        <p class="info_filtres_p">&eacute;conomique</p>
+                        Économique
                     </a>
 
                     <a href="#">
                         <i class="fa-solid fa-person"></i>
-                        <p class="info_filtres_p">Familial</p>
+                        Familial
                     </a>
 
                     <a href="#">
                         <i class="fa-solid fa-heart"></i>
-                        <p class="info_filtres_p">romantique</p>
+                        romantique
                     </a>
 
                     <a href="#">
                         
                         <i class="fa-solid fa-fire"></i>
-                        <p class="info_filtres_p">nos p&eacute;pites</p>
+                        <!-- Corriger les accents -->
+                        nos pépites
                     </a>
                 </div>
                 <div class="info_info">
@@ -84,34 +86,34 @@
             <div class="hebergements-and-populaires">
 
                 <section class="hebergements">
-
-                    <h2 class="section-title">H&eacute;bergements &agrave; Marseille</h1>
-                    
+                    <h2 class="section-title">Hébergements à Marseille</h1>
                         <div class="hebergements_flex">
-
-                            <div class="card">
-
-                                <img src="images/hebergements/fred-kleber.jpg" alt="hotel_du_port">
-                                
-                                <div class="hebergements_content">
-                                    <div>
-                                        <h3 class="card-title">H&ocirc;tel du port</h3>
+                            <!--  Tes cards doivent être dans des balises article
+                            Les cards doivent être cliquables entièrement (a) -->
+                            <article class="card">
+                                <a href="#">
+                                    <img src="images/hebergements/fred-kleber.jpg" alt="hotel_du_port">
                                     
-                                        <p class="card-subtitle">nuit &agrave; partir de 52 &euro;</p>
+                                    <div class="hebergements_content">
+                                        <div>
+                                            <h3 class="card-title">H&ocirc;tel du port</h3>
+                                            <p class="card-subtitle">nuit à partir de 52 <span class="euro">€</span></p>
+                                        </div>
+                                        
+                                        
+                                        <div class="hebergements_card-rating">
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                            <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                            <span class="sr-only">Note de 4 sur 5</span>
+                                        </div>
                                     </div>
-                                    
-                                    
-                                    <div class="hebergements_card-rating">
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
-                                    </div>
-                                </div>
+
+                                </a>
                                 
-                            </div>
+                            </article>
         
                             <div class="card">
 
@@ -121,7 +123,7 @@
                                     <div>
                                         <h3 class="card-title">H&ocirc;tel Chez Amina</h3>
                                 
-                                        <p class="card-subtitle">nuit &agrave; partir de 96 &euro;</p>
+                                        <p class="card-subtitle">nuit à partir de 96 <span class="euro">€</span></p>
                                     </div>
                                     
                                     
@@ -145,7 +147,7 @@
                                     <div>
                                       <h3 class="card-title">H&ocirc;tel Les Mouettes</h3>
                                 
-                                        <p class="card-subtitle">nuit &agrave; partir de 76 &euro;</p>  
+                                        <p class="card-subtitle">nuit à partir de 76 <span class="euro">€</span></p>  
                                     </div>
                                     
                                     
@@ -169,7 +171,7 @@
                                     <div>
                                         <h3 class="card-title">H&ocirc;tel de la mer</h3>
                                 
-                                        <p class="card-subtitle">nuit &agrave; partir de 46 &euro;</p> 
+                                        <p class="card-subtitle">nuit à partir de 46 <span class="euro">€</span></p> 
                                     </div>
                                     
                                     
@@ -191,9 +193,9 @@
                                 
                                 <div class="hebergements_content">
                                     <div>
-                                       <h3 class="card-title">Auberge La Canabi&egrave;re</h3>
+                                       <h3 class="card-title">Auberge La Canabière</h3>
                                 
-                                        <p class="card-subtitle">nuit &agrave; partir de 25 &euro;</p> 
+                                        <p class="card-subtitle">nuit à partir de 25 <span class="euro">€</span></p> 
                                     </div>
                                     
                                     
@@ -217,7 +219,7 @@
                                     <div>
                                         <h3 class="card-title">Auberge Le Panier</h3>
 
-                                        <p class="card-subtitle">nuit &agrave; partir de 23 &euro;</p>
+                                        <p class="card-subtitle">nuit à partir de 23 <span class="euro">€</span></p>
                                     </div>
                                     
                                     
@@ -245,6 +247,7 @@
                     </div>
                     <div class="populaires-cards">
                         <article class="card">
+                            <!-- Il manque la balise a -->
                             <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -300,9 +303,10 @@
                 </section>
             </div>
 
-            <!-- <section class="activite">
+            <section class="activite">
                 <h1>Activités à Marseille</h1>
                 <div class="activite_flex" >
+                    <!-- figure et figcaption, sans oublier d'entourer de a -->
                     <div class="activite_card">
                         <img src="images/activites/reno-laithienne.jpg" alt="activite_vieux-port">
                         <h3>Vieux-Port</h3>
@@ -320,27 +324,28 @@
                         <h3>Notre-Dame-de-la-Garde</h3>
                     </div>
                 </div>
-            </section> -->
+            </section>
         </main>
 
         <footer class="footer">
             <div>
-                <h3>A propos</h3>
+                <h2>A propos</h2>
                 <ul>
+                    <!-- Attention dans tes LI c'est des liens -->
                     <li>Fonctionnement de site</li>
                     <li>Conditions générales</li>
                     <li>Données et confidentialité</li>
                 </ul>
             </div>
             <div>
-                <h3>Nos hébérgements</h3>
+                <h2>Nos hébérgements</h2>
                 <ul>
                     <li>charte qualité</li>
                     <li>proposer votre hotel</li>
                 </ul>
             </div>
             <div>
-                <h3>Assistance</h3>
+                <h2>Assistance</h2>
                 <ul>
                     <li>centre d'aide</li>
                     <li>Nous contacter</li>

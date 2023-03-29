@@ -132,7 +132,7 @@ body {
     font-weight: 600;
     font-size: 1.1rem;
 }
-.info_filtres_p {
+.info_filtres a {
     text-transform: capitalize;
     color: black;
     font-weight: 600;
@@ -431,7 +431,7 @@ body {
     .info_filtres a:hover {
         border-color: var(--filter-bg-color);
     }
-    .info_filtres_p {
+    .info_filtres a {
         font-size: 0.9rem;
     }
     .hebergements-and-populaires {
