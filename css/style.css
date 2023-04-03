@@ -52,6 +52,7 @@ body {
 }
 .header_nav a {
     padding: 1rem 0;
+    color: black;
 }
 
 .header_nav .active {
