@@ -55,9 +55,9 @@ body {
     color: black;
 }
 
-.header_nav .active {
+.header_nav a:hover {
     color: var(--main-color);
-    border-top: 1px solid;
+    border-top: 3px solid;
 }
 .info h1 {
     font-size: 1.4rem;
@@ -128,9 +128,13 @@ body {
 
     padding-left: 1rem;
     padding-right: 1rem;
-    border: 2px solid var(--filter-bg-color);
+    border: 2px solid var(--main-bg-color);
     border-radius: 1.5rem;
     height: 3rem;
+    text-transform: capitalize;
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
 }
 .info_filtres_title {
     text-transform: capitalize;
@@ -138,19 +142,16 @@ body {
     font-weight: 600;
     font-size: 1.1rem;
 }
-.info_filtres a {
-    text-transform: capitalize;
-    color: black;
-    font-weight: 600;
-    font-size: 1rem;
-}
+
 .info_filtres a:hover {
     background-color: var(--filter-bg-color);
+    border: 2px solid var(--filter-bg-color);
 }
 .info_info {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    margin: 1.5rem 0;
 }
 .info_info div {
     height: 1.5rem;
@@ -216,17 +217,14 @@ body {
     background-color: var(--main-bg-color);
 }
 .hebergements h2 {
-    margin: 1.5rem 0.5rem;
+    margin: 1rem 0.5rem 1.5rem;
 }
 .hebergements_flex {
-    display: flex;
+    display: grid;
     width: 100%;
-    flex-wrap: wrap;
     gap: 1rem;
-    margin: 0 0.5rem;
-}
-.hebergements_flex .card {
-    width: 30%;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 1rem;
 }
 .hebergements_flex img {
     width: 100%;
@@ -265,7 +263,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 .populaires-cards {
     display: flex;
@@ -309,7 +307,12 @@ body {
 
 
 /***** Activitées **************/
-
+.activite {
+    padding: 1rem 2rem 0 2rem;
+}
+.activite h1 {
+    padding: 2.5rem 0 2rem 0;
+}
 .activite_flex {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -324,9 +327,11 @@ body {
     margin: 0;
     height: 439px;
 }
-.activite_card h3 {
+.activite_card figcaption {
     color: black;
     padding-left: 0.5rem;
+    margin: 1rem 0;
+    font-weight: 700;
 }
 .activite_card img {
  height: 380px;
@@ -342,11 +347,11 @@ body {
 .footer {
     display: flex;
     background-color: var(--main-bg-color);
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 .footer div {
     flex: 1;
-    padding-left: 0.5rem;
+    padding-left: 1.2rem;
     padding-bottom: 2rem;
 }
 .footer li {
