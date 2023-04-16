@@ -90,9 +90,6 @@ body {
     padding-left: 0.5rem;
     height: 3rem;
 }
-.info_search_bar:focus-visible {
-    border: 2px solid var(--main-bg-color);
-}
 .info_search_btn {
     position: absolute;
     height: 3rem;
